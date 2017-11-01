@@ -7,10 +7,10 @@ class Anagram
   end
 
   def match(array_of_words)
-    result = ""
+    result = []
     array_of_words.each do |word|
       if word.split("").sort == word_to_match.split("").sort
-        result = word
+        result << word
       end
     end
     result
